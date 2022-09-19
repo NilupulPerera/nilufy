@@ -14,7 +14,7 @@
 *::before {
 	box-sizing: border-box;
 }
-/* --------------------------------------------------------- */
+/*------------------------------------------*/
 /* Typography */
 ::selection {
 	background: var(--color-primary);
@@ -57,6 +57,24 @@ p {
 	margin-top: 0;
 }
 
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 7.5rem;
+	}
+
+	h2 {
+		font-size: 3.8rem;
+	}
+
+	h3 {
+		font-size: 2.7rem;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	body {
 		font-size: 1.8rem;
@@ -67,21 +85,29 @@ p {
 	}
 
 	h2 {
-		font-size: 4rem;
+		font-size: 3.6rem;
 	}
 
 	h3 {
 		font-size: 2.4rem;
 	}
 }
-/* --------------------------------------------------------- */
+/*------------------------------------------*/
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
 }
-/* --------------------------------------------------------- */
+/*------------------------------------------*/
 .image-description {
     padding: 2rem;
+}
+
+.image-heading {
+	text-align: center;
+}
+
+.image-text {
+	text-align: center;
 }
 
 .image-container {
@@ -89,9 +115,10 @@ p {
     padding: 2rem;
 
 }
-/* --------------------------------------------------------- */
+/*------------------------------------------*/
 .grid {
     display: grid;
+	align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,3 +126,4 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/*------------------------------------------*/
