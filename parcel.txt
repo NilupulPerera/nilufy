@@ -1,0 +1,96 @@
+||||||||||||||||||||||||||||||||||||||||||||||
+
+.gitignore file to be added with followings
+node_modules/
+dist/
+.cache/
+
+-----------------------------------------------
+D:\OneDrive\Desktop\nilufy
+
+npm init -y
+
+npm i -D parcel-bundler
+
+-----------------------------------------------
+in package.json:
+"scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+
+---------------------------------------------
+node_modules/.bin/parcel index.html
+
+CTRL + C to stop local host:1234
+
+Delete: --> dist
+
+---------------------------------------------
+.htmlnanorc file should be added to project root with following JSON configuration object
+{
+    "minifySvg": false
+}
+
+-----------------------------------------------
+node_modules/.bin/parcel build index.html
+
+||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+
+
+
+
+
+
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||
+
+C:\Users\"Nilupul Perera"\Desktop\Parcel
+
+-----------------------------------------------
+npm init
+npm install parcel-bundler --save-dev 
+
+-----------------------------------------------
+in package.json:
+"scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+
+-----------------------------------------------
+npm run dev 
+
+-----------------------------------------------
+.htmlnanorc file should be added to project root with following JSON configuration object
+{
+    "minifySvg": false
+}
+
+-----------------------------------------------
+npm run build
+
+
+
+
+
+This is NOT working.
+||||||||||||||||||||||||||||||||||||||||||||||
+
+D:\OneDrive\Desktop\FrogWorld
+
+npm init -y
+
+npm i -g parcel-bundler
+---------------------------------------------
+parcel index.html
+Delete: --> dist
+---------------------------------------------
+parcel build index.html
+
