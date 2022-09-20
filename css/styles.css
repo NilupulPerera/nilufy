@@ -99,7 +99,7 @@ p {
 }
 /*------------------------------------------*/
 .image-description {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 .image-heading {
@@ -111,19 +111,20 @@ p {
 }
 
 .image-container {
-    width: 100%;
-    padding: 2rem;
-
+	width: 95%;
+	padding: 1rem;
+	margin: 1rem;
+	box-shadow: 0px 0px 5px 5px #ccc;
 }
 /*------------------------------------------*/
 .grid {
-    display: grid;
+	display: grid;
 	align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-    .grid--1x2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+	.grid--1x2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 /*------------------------------------------*/
