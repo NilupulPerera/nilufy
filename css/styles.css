@@ -15,6 +15,7 @@
 *::before {
 	box-sizing: border-box;
 }
+
 /*------------------------------------------*/
 /* Typography */
 ::selection {
@@ -93,16 +94,18 @@ p {
 		font-size: 2.4rem;
 	}
 }
+
 /*------------------------------------------*/
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
 /*------------------------------------------*/
 .grid {
 	display: grid;
 	align-items: center;
-	margin-bottom: 8rem;
+	margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,8 +113,33 @@ p {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-/* Image Block----------------------------- */
+
 /*------------------------------------------*/
+/* Image Series Heading-------------------- */
+.image-series-heading {
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 1rem;
+	margin-top: 8rem;
+	margin-bottom: 4rem;
+}
+
+.image-series-heading h2 {
+	color: white;
+}
+
+.image-series-heading p {
+	margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+	.image-series-heading p {
+		margin-bottom: 2.4rem;
+	}
+}
+
+/*------------------------------------------*/
+/* Image Block----------------------------- */
 .image-description {
 	padding: 2rem;
 }
@@ -135,11 +163,13 @@ p {
 .image {
 	width: 100%;
 }
+
 /*------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-	.counter:nth-of-type(even) .count {
+	.counter:nth-of-type(odd) .count {
 		order: 2;
 	}
 }
+
 /*------------------------------------------*/
