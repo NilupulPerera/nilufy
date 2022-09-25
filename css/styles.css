@@ -113,6 +113,21 @@ p {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+/* ---------------------------------------- */
+/* Hero------------------------------------ */
+.hero {
+	color: white;
+	padding: 2rem;
+	background-image: url(/images/sacrum.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
+}
+
+.hero h1 {
+	color: white;
+	margin: 0;
+}
 
 /*------------------------------------------*/
 /* Image Series Heading-------------------- */
@@ -132,6 +147,11 @@ p {
 .image-series-heading p {
 	margin-bottom: 0;
 }
+
+.image-series-heading:first-child {
+	margin-top: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
 	.image-series-heading p {
 		margin-bottom: 2.4rem;
