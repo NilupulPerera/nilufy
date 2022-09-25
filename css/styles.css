@@ -118,6 +118,7 @@ p {
 .hero {
 	color: white;
 	padding: 2rem;
+	background-color: black;
 	background-image: url(/images/sacrum.jpg);
 	background-size: cover;
 	background-position: center;
