@@ -141,7 +141,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: #555;
+	background-color: #222;
 	padding: 0.5rem;
 }
 
@@ -153,7 +153,7 @@ p {
 
 .nav_list_item {
 	padding: 0.2rem 0rem;
-	border-bottom: 1px solid #222;
+	border-bottom: 1px solid #444;
 }
 
 .nav_list_item > a {
