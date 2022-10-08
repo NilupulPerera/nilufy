@@ -128,13 +128,9 @@ p {
 	color: white;
 }
 
-
 .list {
 	list-style: none;
-
 }
-
-
 
 /* ---------------------------------------- */
 .nav {
@@ -294,3 +290,9 @@ p {
 }
 
 /*------------------------------------------*/
+/* Chapter */
+
+.index_heading,
+.index_text {
+	text-decoration: none;
+}
