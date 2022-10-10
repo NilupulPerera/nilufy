@@ -1,13 +1,21 @@
 :root {
-	--color-primary: #2584ff;
-	--color-secondary: #00d9ff;
-	--color-accent: #ff3400;
-	--color-headings: #1b0760;
-	--color-body: #918ca4;
-	--color-body-darker: #5c5577;
-	--color-border: #ccc;
-	--color-box-shadow: #ccc;
-	--border-radius: 30px;
+	--color-headings: #0D0D0D;
+	--color-body: #595959;
+	/* -------------------------------- */
+	--color-border: #A6A6A6;
+	--color-box-shadow: #A6A6A6;
+	/* -------------------------------- */
+	--color-white: #f2f2f2;
+	--color-black: #0D0D0D;
+	--color-background-nav: #262626;
+	--color-border-nav: #595959;
+	--color-anchor-nav-list-item-hover: #f2f2f2;
+	--color-anchor-nav-list-item: #A6A6A6;
+	--color-nav-toggler-expanded: #A6A6A6;
+	--color-background-image-series-heading: #0D0D0D;
+	--color-color-image-series-heading: #f2f2f2;
+	--color-heading-image-series-heading: #f2f2f2;
+	--color-select: #595959;
 }
 
 *,
@@ -19,8 +27,8 @@
 /*------------------------------------------*/
 /* Typography */
 ::selection {
-	background: var(--color-primary);
-	color: #fff;
+	background: var(--color-select);
+	color: var(--color-white);
 }
 
 html {
@@ -125,7 +133,7 @@ p {
 }
 
 .anchor--white {
-	color: white;
+	color: var(--color-white);
 }
 
 .list {
@@ -137,7 +145,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: #222;
+	background-color: var(--color-background-nav);
 	padding: 0.5rem;
 }
 
@@ -149,17 +157,17 @@ p {
 
 .nav_list_item {
 	padding: 0.2rem 0rem;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid var(--color-border-nav);
 }
 
 .nav_list_item > a {
 	text-decoration: none;
-	color: #d2d0db;
+	color: var(--color-anchor-nav-list-item);
 	transition: color 0.3s;
 }
 
 .nav_list_item > a:hover {
-	color: #fff;
+	color: var(--color-anchor-nav-list-item-hover);
 }
 
 .nav__toggler {
@@ -182,7 +190,7 @@ p {
 
 .collapsible--expanded .nav__toggler {
 	opacity: 1;
-	box-shadow: 0 0 0 3px #222;
+	box-shadow: 0 0 0 3px var(--color-nav-toggler-expanded);
 	border-radius: 5px;
 	transition: box-shadow 0.15s;
 }
@@ -212,9 +220,9 @@ p {
 }
 /* Hero------------------------------------ */
 .hero {
-	color: white;
+	color: var(--color-white);
 	padding: 2rem;
-	background-color: black;
+	background-color: var(--color-black);
 	background-image: url(/images/sacrum.jpg);
 	background-size: cover;
 	background-position: center;
@@ -222,7 +230,7 @@ p {
 }
 
 .hero h1 {
-	color: white;
+	color: var(--color-white);
 	margin: 0;
 }
 
@@ -230,15 +238,15 @@ p {
 /* Image Series Heading-------------------- */
 .image-series-heading {
 	text-align: center;
-	background: black;
-	color: white;
+	background: var(--color-background-image-series-heading);
+	color: var(--color-color-image-series-heading);
 	padding: 1rem;
 	margin-top: 8rem;
 	margin-bottom: 4rem;
 }
 
 .image-series-heading h2 {
-	color: white;
+	color: var(--color-heading-image-series-heading);
 }
 
 .image-series-heading p {
@@ -273,7 +281,7 @@ p {
 	width: 96%;
 	padding: 1rem 1rem;
 	margin: 1rem auto;
-	box-shadow: 0px 0px 5px 5px var(--color-box-shadow);
+	box-shadow: 0px 0px 10px 5px var(--color-box-shadow);
 	display: flex;
 }
 
@@ -296,3 +304,5 @@ p {
 .index_text {
 	text-decoration: none;
 }
+
+/* --------------------------------------- */
