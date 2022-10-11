@@ -2,16 +2,15 @@
 	--color-headings: #0D0D0D;
 	--color-body: #595959;
 	/* -------------------------------- */
-	/* --color-border: #A6A6A6; */
-	--color-box-shadow: #A6A6A6;
+	--color-box-shadow: #b2b2b2;
 	/* -------------------------------- */
 	--color-white: #f2f2f2;
 	--color-black: #0D0D0D;
-	--color-background-nav: #262626;
+	--color-background-strip: #262626;
 	--color-border-nav: #595959;
+	--color-anchor-nav-list-item: #b2b2b2;
 	--color-anchor-nav-list-item-hover: #f2f2f2;
-	--color-anchor-nav-list-item: #A6A6A6;
-	--color-nav-toggler-expanded: #A6A6A6;
+	--color-nav-toggler-expanded: #b2b2b2;
 	--color-background-image-series-heading: #0D0D0D;
 	--color-color-image-series-heading: #f2f2f2;
 	--color-heading-image-series-heading: #f2f2f2;
@@ -145,7 +144,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: var(--color-background-nav);
+	background-color: var(--color-background-strip);
 	padding: 0.5rem;
 }
 
@@ -306,3 +305,20 @@ p {
 }
 
 /* --------------------------------------- */
+/* Footer */
+.footer {
+	display: flex;
+	background-color: var(--color-background-strip);
+	padding:3rem 3rem;
+	margin-bottom: 2rem;
+	justify-content: center;
+	/* box-shadow:0px 0px 10px 5px var(--color-box-shadow); */
+	
+}
+
+@media screen and (min-width: 768px) {
+	.footer{
+		justify-content: end;
+	}
+}
+
