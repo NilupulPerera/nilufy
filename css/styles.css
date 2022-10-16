@@ -358,8 +358,12 @@ p {
 	background-color: var(--color-background-footer);
 	padding:3rem 3rem;
 	margin-bottom: 2rem;
-	justify-content: space-between;	
+	justify-content: end;	
 	align-items: center;	
+}
+
+.footer--with-buttons {
+	justify-content: space-between;
 }
 
 .footer-item {
@@ -367,12 +371,12 @@ p {
 }
 
 .footer-logo {
-	opacity: 0;
+	display: none;
 }
 
 @media screen and (min-width: 600px) {
 	.footer-logo {
-		opacity: 1;
+		display: inline;
 	}
 }
 

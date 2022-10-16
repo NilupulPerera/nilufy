@@ -9,7 +9,7 @@ collapsibles.forEach((item) =>
 
 // #############################################
 
-// When the user scrolls down 50px from the top of the document, resize the back-button's opacity
+// When the user scrolls down 640px from the top of the document, resize the back-button's opacity
 
 window.onscroll = function() {scrollFunction()};
 
