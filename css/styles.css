@@ -358,15 +358,26 @@ p {
 	background-color: var(--color-background-footer);
 	padding:3rem 3rem;
 	margin-bottom: 2rem;
-	justify-content: center;	
+	justify-content: space-between;	
+	align-items: center;	
 }
 
-@media screen and (min-width: 768px) {
-	.footer{
-		justify-content: end;
-	}
+.footer-item {
+	padding-top: 1rem;
 }
 
+.footer-anchor {
+	text-decoration: none;
+	line-height: 1;
+}
+
+
+.goto_button {
+	height: 20px;
+}
+
+/* --------------------------------------- */
+/* Page Top */
 .home {
 	position: fixed;
 	bottom: 2rem;
@@ -374,7 +385,6 @@ p {
 	width: 80px;
 	height: 22px;
 	background: var(--color-black);
-	opacity: 0.8;
 	text-align: center;
 	font-size: 2rem;
 }
@@ -387,4 +397,8 @@ p {
 
 .page-top {
 	width: 80px;
+}
+
+#back-button {
+	opacity: 0.8;
 }
