@@ -366,6 +366,16 @@ p {
 	padding-top: 1rem;
 }
 
+.footer-logo {
+	opacity: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.footer-logo {
+		opacity: 1;
+	}
+}
+
 .footer-anchor {
 	text-decoration: none;
 	line-height: 1;
