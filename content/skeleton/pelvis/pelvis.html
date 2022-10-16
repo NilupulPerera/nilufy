@@ -13,7 +13,7 @@
 		<meta property="og:type" content="website" >
 		<meta property="og:image" content="http://" >
 		<meta property="og:url" content="http://nilufied.com" >
-		<title>pelvis</title>
+		<title>Pelvis</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" >
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 		<link
@@ -24,9 +24,10 @@
 		<link rel="stylesheet" href="/css/styles.css" >
 	</head>
 	<body>
+		<!-- ################################################# -->
 		<header class="container">
 			<nav class="nav collapsible">
-				<a class="anchor" href="/"><img src="/icons/logo.svg" alt=""></a>
+				<a class="anchor" href="#"><img src="/icons/logo.svg" alt=""></a>
 				<img class="menu nav__toggler" src="/icons/menu.svg" alt="">
 				<ul class="list nav_list collapsible__content">
 					<li class="nav_list_item"><a href="/">Home</a></li>
@@ -36,6 +37,7 @@
 				</ul>
 			</nav>
 		</header>
+		<!-- ################################################# -->
 		<section class="container">
 			<div class="hero">
 				<h1>Pelvis</h1>
@@ -48,17 +50,24 @@
 		<!-- ################################################# -->
 		<section class="container">
 			
-			<div class="image-series-heading">
-				<h2>Pelvis</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
+			<div class="image-series-container thumbnail-container">
+				<h2 class="image-series-heading thumbnail-heading">Pelvis</h2>
+				<p class="image-series-text thumbnail-text">Lorem ipsum dolor sit amet.</p>
+				<ul class="list thumbnail-list">
+					<li><a href="#pelvis-anterior"><div class="thumbnail"><div class="thumbnail-view"></div></div></a></li>
+					<li><a href="#pelvis-posterior"><div class="thumbnail"><div class="thumbnail-view"></div></div></a></li>
+					<li><a href="#pelvis-superior"><div class="thumbnail"><div class="thumbnail-view"></div></div></a></li>
+					<li><a href="#pelvis-inferior"><div class="thumbnail"><div class="thumbnail-view"></div></div></a></li>
+				</ul>
 			</div>
 			
-			<article class="grid grid--1x2 counter">
+			<article id="pelvis-anterior" class="grid grid--1x2 counter">
 				<div class="image-description count">
 					<h3 class="image-heading">Anterior View</h3>
 					<p class="image-text">
 						Anterior view of the pelvis.
 					</p>
+					<!-- <a class="image-anchor" href="#"><div class="image-home"></div></a> -->
 				</div>
 				<picture class="image-container">
 					<source
@@ -93,12 +102,13 @@
 				</picture>
 			</article>
 			
-			<article class="grid grid--1x2 counter">
+			<article id="pelvis-posterior" class="grid grid--1x2 counter">
 				<div class="image-description count">
 					<h3 class="image-heading">Posterior View</h3>
 					<p class="image-text">
 						Posterior view of the pelvis.
 					</p>
+					<!-- <a class="image-anchor" href="#"><div class="image-home"></div></a> -->
 				</div>
 				<picture class="image-container">
 					<source
@@ -133,12 +143,13 @@
 				</picture>
 			</article>
 			
-			<article class="grid grid--1x2 counter">
+			<article id="pelvis-superior" class="grid grid--1x2 counter">
 				<div class="image-description count">
 					<h3 class="image-heading">Superior View</h3>
 					<p class="image-text">
 						Superior view of the pelvis.
 					</p>
+					<!-- <a class="image-anchor" href="#"><div class="image-home"></div></a> -->
 				</div>
 				<picture class="image-container">
 					<source
@@ -173,12 +184,13 @@
 				</picture>
 			</article>
 			
-			<article class="grid grid--1x2 counter">
+			<article id="pelvis-inferior" class="grid grid--1x2 counter">
 				<div class="image-description count">
 					<h3 class="image-heading">Inferior View</h3>
 					<p class="image-text">
 						Inferior view of the pelvis.
 					</p>
+					<!-- <a class="image-anchor" href="#"><div class="image-home"></div></a> -->
 				</div>
 				<picture class="image-container">
 					<source
@@ -216,8 +228,16 @@
 		</section>
 		<!-- ################################################# -->
 		<footer class="container footer">
-			<a class="anchor" href="/"><img src="/icons/logo.svg" alt=""></a>
+			<a class="anchor" href="#"><img src="/icons/logo.svg" alt=""></a>
 		</footer>
+		<!-- ################################################# -->
+		<a href="#">
+			<div class="home">
+				<img class="page-top" src="/icons/page_top.svg" alt="">
+			</div>
+		</a>
+		<!-- ################################################# -->
 		<script src="/js/main.js"></script>
+		<!-- ################################################# -->
 	</body>
 </html>
