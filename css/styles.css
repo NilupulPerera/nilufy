@@ -414,5 +414,11 @@ p {
 }
 
 #back-button {
-	opacity: 0.8;
+	opacity: 0;
 }
+
+/* @media screen and (min-width: 640px) {
+	#back-button {
+		opacity: 0.8;
+	}
+} */
