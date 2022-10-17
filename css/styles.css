@@ -221,17 +221,36 @@ p {
 /* Hero------------------------------------ */
 .hero {
 	color: var(--color-white);
-	padding: 2rem;
-	background-color: var(--color-black);
-	background-image: url(/images/sacrum.jpg);
-	background-size: cover;
-	background-position: center;
+	/* padding: 2rem; */
+	/* background-color: var(--color-black); */
+	/* background-image: url(/images/sacrum.jpg); */
+	
+	/* background-size: cover; */
+	/* background-position: center; */
+
 	height: 50vh;
+	border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 .hero h1 {
 	color: var(--color-white);
 	margin: 0;
+}
+
+.hero-video {
+	/* width: 100vw; */
+	height: 50vh;
+}
+
+@media screen and (min-width: 630px) {
+	.hero-video {
+		width: 100vw;
+		height: auto;
+	}
 }
 
 /*------------------------------------------*/
