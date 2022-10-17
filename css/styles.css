@@ -233,12 +233,15 @@ p {
 	color: var(--color-black);
 	margin: 0;
 	position: absolute;
+	top: 20vh;
+	left: 3rem;
+	opacity: 0.8;
 }
 
 .hero-text {
 	position: absolute;
-	bottom: 1rem;
-	left: 1rem;
+	top: 35vh;
+	left: 3rem;
 	color: var(--color-black);
 }
 
@@ -247,10 +250,23 @@ p {
 }
 
 @media screen and (min-width: 630px) {
+
 	.hero-video {
 		width: 100vw;
 		height: auto;
 	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.hero-heading {
+		left: 5rem;
+	}
+
+	.hero-text {
+		left: 5rem;
+	}
+	
 }
 
 /*------------------------------------------*/
