@@ -22,3 +22,11 @@ function scrollFunction() {
     document.getElementById("back-button").style.opacity = "0";
   }
 }
+
+// #############################################
+
+let heroHeight = document.querySelector('.hero').clientHeight;
+
+if(heroHeight < 210){
+  document.querySelector('.hero-text').style.display = 'none';
+}
