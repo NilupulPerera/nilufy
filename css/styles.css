@@ -268,6 +268,12 @@ p {
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.hero-text {
+		font-size: 2.4rem;
+	}
+}
+
 @media screen and (max-height: 420px) {
 	.hero-text {
 		display: none;
@@ -299,21 +305,35 @@ p {
 	flex-direction: column;
 }
 
+.thumbnail-heading {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	padding-bottom: 2rem;
+}
+
+.thumbnail-block {
+	background-color: var(--color-black);
+}
+
 .thumbnail-list {
+	--thumbnail-number: 4;
 	display: none;
 	margin: 0 auto;
+	padding-left: 0;
 }
 
 .thumbnail {
-	--thumbnail-size: 0.08;
+	--thumbnail-size: 0.07;
 	width: calc(100vw * var(--thumbnail-size));
 	height: calc(100vw * var(--thumbnail-size));
 	background-color: var(--color-white);
 	background-image: url(/images/resized/sacrum_380.png);
 	background-position: center;
 	background-size: cover;
-	border: 1px solid var(--color-border);
-	margin: 0 0.5rem;
+	border: 0.5px solid var(--color-black);
+	border-radius: 100%;
+	box-shadow: 0 0 10px 1px var(--color-white);
+	margin: 1rem calc(25vw * var(--thumbnail-size));
 	display: flex;
 	justify-content: center;
 	align-items: end;
@@ -330,7 +350,8 @@ p {
 @media screen and (min-width: 768px) {
 
 	.thumbnail-heading {
-		margin-bottom: 3rem;
+		font-size: 4rem;
+		border-bottom: 1px solid var(--color-border);
 	}
 
 	.thumbnail-text {
@@ -339,13 +360,19 @@ p {
 
 	.thumbnail-list {
 		display: flex;
+		justify-content:center;
 	}
 }
 
 @media screen and (min-width: 1140px) {
+	.thumbnail-list {
+		padding: 0 calc(570px - calc(0.5rem * var(--thumbnail-number)));
+	}
+
 	.thumbnail {
 		width: calc(1140px * var(--thumbnail-size));
 		height: calc(1140px * var(--thumbnail-size));
+		margin: 1rem calc(285px * var(--thumbnail-size));
 	}
 }
 
@@ -431,7 +458,7 @@ p {
 }
 
 /* --------------------------------------- */
-/* Page Top */
+/* Page Top Button */
 .home {
 	position: fixed;
 	bottom: 2rem;
@@ -456,9 +483,3 @@ p {
 #back-button {
 	opacity: 0;
 }
-
-/* @media screen and (min-width: 640px) {
-	#back-button {
-		opacity: 0.8;
-	}
-} */
