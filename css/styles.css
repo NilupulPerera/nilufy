@@ -233,14 +233,14 @@ p {
 	color: var(--color-black);
 	margin: 0;
 	position: absolute;
-	top: 20vh;
+	top: 10vh;
 	left: 3rem;
 	opacity: 0.8;
 }
 
 .hero-text {
 	position: absolute;
-	top: 35vh;
+	top: 25vh;
 	left: 3rem;
 	color: var(--color-black);
 }
@@ -266,7 +266,12 @@ p {
 	.hero-text {
 		left: 5rem;
 	}
-	
+}
+
+@media screen and (max-height: 420px) {
+	.hero-text {
+		display: none;
+	}
 }
 
 /*------------------------------------------*/
