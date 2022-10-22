@@ -29,4 +29,5 @@ let heroHeight = document.querySelector('.hero').clientHeight;
 
 if(heroHeight < 210){
   document.querySelector('.hero-text').style.display = 'none';
+  location.reload();
 }
