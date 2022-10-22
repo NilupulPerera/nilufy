@@ -16,6 +16,7 @@
 	--color-heading-image-series-heading: #f2f2f2;
 	--color-background-footer: #0D0D0D;
 	--color-select: #595959;
+	--color-button: #FFB81C;
 }
 
 *,
@@ -461,25 +462,27 @@ p {
 /* Page Top Button */
 .home {
 	position: fixed;
-	bottom: 2rem;
+	bottom: 2.25rem;
 	right: 1rem;
-	width: 80px;
-	height: 22px;
-	background: var(--color-black);
-	text-align: center;
-	font-size: 2rem;
-}
-
-@media screen and (min-width: 1140px) {
-	.home {
-		right: calc(50vw - 570px + 0.3rem);
-	}
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
 }
 
 .page-top {
-	width: 80px;
+	width: 40px;
 }
 
 #back-button {
 	opacity: 0;
+}
+
+.home:hover {
+	box-shadow: 0 0 6px 3px var(--color-button);
+}
+
+@media screen and (min-width: 1140px) {
+	.home {
+		right: calc(50vw - 570px + 1rem);
+	}
 }
