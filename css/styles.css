@@ -375,24 +375,25 @@ p {
 		justify-content:center;
 	}
 
-	.thumbnail-animation:hover {
-		transform: scale(1.2);
-	}
-
-	.thumbnail:hover {
-		box-shadow: 0 0 15px 1px var(--color-white);
-	}
 }
 
 @media screen and (min-width: 1140px) {
 	.thumbnail-list {
 		padding: 0 calc(570px - calc(0.5rem * var(--thumbnail-number)));
 	}
-
+	
 	.thumbnail {
 		width: calc(1140px * var(--thumbnail-size));
 		height: calc(1140px * var(--thumbnail-size));
 		margin: 1rem calc(285px * var(--thumbnail-size));
+	}
+	
+	.thumbnail-animation:hover {
+		transform: scale(1.2);
+	}
+	
+	.thumbnail:hover {
+		box-shadow: 0 0 15px 1px var(--color-white);
 	}
 }
 
