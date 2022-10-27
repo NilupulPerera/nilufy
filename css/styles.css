@@ -143,6 +143,10 @@ p {
 	list-style: none;
 }
 
+/* .logo {
+	width: 54px;
+} */
+
 /* ---------------------------------------- */
 .nav {
 	display: flex;
